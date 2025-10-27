@@ -1,7 +1,7 @@
 import { getSessionId } from './SessionManager';
 
-// Ensure your .env file has VITE_CHATBOT_API_URL
-const API_BASE_URL = import.meta.env.VITE_CHATBOT_API_URL || 'http://127.0.0.1:8000'
+// Ensure your .env file has CHATBOT_API_URL
+const API_BASE_URL = import.meta.env.CHATBOT_API_URL || 'http://127.0.0.1:8000'
 
 // --- NEW: Key Management ---
 const API_KEYS_STORAGE_KEY = 'legalMateApiKeys';
