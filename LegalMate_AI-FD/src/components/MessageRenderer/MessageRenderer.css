@@ -1,0 +1,152 @@
+/* src/components/MessageRenderer.css */
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  opacity: 0;
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message.user {
+  align-items: flex-end;
+}
+
+.message.ai,
+.message.error {
+  align-items: flex-start;
+}
+
+.message.user p {
+  background-color: var(--message-user-bg);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 20px 20px 4px 20px;
+  max-width: 80%;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* --- *** MODIFIED *** --- */
+.ai-response-card,
+.ai-response-simple {
+  /*
+  background: var(--message-ai-bg);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  */
+  width: 100%;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* --- *** MODIFIED *** --- */
+.loading-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  /*
+  padding: 16px 20px;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  max-width: fit-content;
+  */
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* AI Response Markdown Styling */
+.ai-response-heading {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ai-subheading {
+  margin: 20px 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ai-paragraph {
+  margin: 12px 0 0 0;
+}
+
+.ai-paragraph:first-child {
+  margin-top: 0;
+}
+
+.ai-bold {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ai-list {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
+.ai-list-item {
+  margin-bottom: 5px;
+  line-height: 1.6;
+}
+
+/* Error Message Styles */
+.error-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-lg);
+  color: #dc2626;
+  max-width: 90%;
+}
+
+.error-header h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.error-header p {
+  margin: 4px 0 0 0;
+  color: #b91c1c;
+  font-size: 14px;
+}

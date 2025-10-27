@@ -1,0 +1,153 @@
+/* src/components/ApiKeyModal/ApiKeyModal.css */
+/* This CSS was extracted from the ApiKeyModal.jsx file */
+
+.api-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Kept overlay as-is */
+  backdrop-filter: blur(4px);
+  z-index: 40;
+}
+.api-modal-container {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.api-modal-content {
+  background-color: var(--bg-primary); /* #ffffff */
+  border: 1px solid var(--border-light); /* #e9ecef */
+  border-radius: var(--radius-lg); /* 12px */
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: var(--shadow-md); /* 0 4px 12px rgba(0, 0, 0, 0.08) */
+  color: var(--text-primary); /* #0d1117 */
+}
+.api-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-primary); /* #0d1117 */
+  margin-bottom: 0.5rem;
+}
+.api-modal-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+.header-icon {
+  color: var(--accent-color); /* #000000 */
+}
+.modal-description {
+  font-size: 0.9rem;
+  color: var(--text-secondary); /* #57606a */
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.modal-description strong {
+  color: var(--text-primary); /* #0d1117 */
+  font-weight: 500;
+}
+.api-alert {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--bg-secondary); /* #f8f9fa */
+  border: 1px solid var(--border-light); /* #e9ecef */
+  padding: 0.75rem;
+  border-radius: var(--radius-md); /* 8px */
+  font-size: 0.85rem;
+  color: var(--text-secondary); /* #57606a */
+  margin-bottom: 1.5rem;
+}
+.api-alert span {
+  color: var(--text-primary); /* #0d1117 */
+}
+.api-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary); /* #57606a */
+  margin-bottom: 0.5rem;
+}
+.input-wrapper {
+  position: relative;
+}
+.key-input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--bg-primary); /* #ffffff */
+  border: 1px solid var(--border-hover); /* #d0d7de */
+  border-radius: var(--radius-sm); /* 6px */
+  color: var(--text-primary); /* #0d1117 */
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding-right: 2.5rem; /* Space for eye icon */
+}
+.key-input:focus {
+  outline: none;
+  border-color: var(--accent-color); /* #000000 */
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+.eye-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-muted); /* #8c959f */
+  cursor: pointer;
+}
+.eye-icon:hover {
+  color: var(--text-primary); /* #0d1117 */
+}
+.key-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--accent-color); /* #000000 */
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+.key-link:hover {
+  text-decoration: underline;
+}
+.form-error {
+  color: var(--text-primary); /* #0d1117 */
+  background-color: var(--bg-tertiary); /* #f1f3f4 */
+  border: 1px solid var(--border-hover); /* #d0d7de */
+  border-radius: var(--radius-sm); /* 6px */
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -0.5rem;
+}
+.save-keys-button {
+  padding: 0.75rem;
+  background-color: var(--accent-color); /* #000000 */
+  color: var(--bg-primary); /* #ffffff */
+  border: none;
+  border-radius: var(--radius-sm); /* 6px */
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.save-keys-button:hover {
+  background-color: var(--accent-hover); /* #333333 */
+}

@@ -1,0 +1,9 @@
+# --- Frontend (LegalMate_AI-FD) ---
+# Ignore node_modules, build outputs, and env files
+LegalMate_AI-FD/node_modules
+LegalMate_AI-FD/dist
+LegalMate_AI-FD/.env
+LegalMate_AI-FD/.env.*
+LegalMate_AI-FD/npm-debug.log*
+LegalMate_AI-FD/yarn-debug.log*
+LegalMate_AI-FD/yarn-error.log*

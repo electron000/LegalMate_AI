@@ -1,0 +1,26 @@
+# --- IDE / Editor Specific ---
+# Ignore VS Code local history and settings
+.history
+.vscode
+
+# --- Frontend (LegalMate_AI-FD) ---
+# Ignore node_modules, build outputs, and env files
+LegalMate_AI-FD/node_modules
+LegalMate_AI-FD/dist
+LegalMate_AI-FD/.env
+LegalMate_AI-FD/.env.*
+LegalMate_AI-FD/npm-debug.log*
+LegalMate_AI-FD/yarn-debug.log*
+LegalMate_AI-FD/yarn-error.log*
+
+# --- Backend (LegalMate_AI-BD) ---
+# Ignore Python virtual environments and env files
+LegalMate_AI-BD/venv
+LegalMate_AI-BD/.venv
+LegalMate_AI-BD/.env
+
+# This rule finds ALL __pycache__ folders in ALL subdirectories
+LegalMate_AI-BD/**/__pycache__
+
+# Ignore the original PDF documents
+LegalMate_AI-BD/legal_docs

@@ -1,0 +1,11 @@
+# --- Backend (LegalMate_AI-BD) ---
+# Ignore Python virtual environments and env files
+LegalMate_AI-BD/venv
+LegalMate_AI-BD/.venv
+LegalMate_AI-BD/.env
+
+# This rule finds ALL __pycache__ folders in ALL subdirectories
+LegalMate_AI-BD/**/__pycache__
+
+# Ignore the original PDF documents
+LegalMate_AI-BD/legal_docs
