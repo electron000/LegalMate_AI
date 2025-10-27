@@ -1,11 +1,6 @@
  .\venv\Scripts\Activate.ps1
 uvicorn main:app --reload
 
-GOOGLE_API_KEY="AIzaSyBgq2S8lTEMVqNDc7hikpEIL2AMfBscPEw"
-CHROMA_DB_PATH="chroma_db"
-COHERE_API_KEY="s6tPsjYKQOWNvqESP8vMgBY5JhBNPttVaUGFbAML" 
-TAVILY_API_KEY="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"
-
 
 ---------------------------------------------------------------------------
 1. The "LLM-Only" Path (Philosophical)
